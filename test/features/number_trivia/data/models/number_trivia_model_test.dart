@@ -1,6 +1,4 @@
 import 'dart:convert';
-import 'dart:math';
-
 import 'package:CLEAN_ARCHITECTURE_TDD_COURSE/features/number_trivia/data/models/number_trivia_model.dart';
 import 'package:CLEAN_ARCHITECTURE_TDD_COURSE/features/number_trivia/domain/entities/number_trivia.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -62,4 +60,3 @@ void main() {
     );
   });
 }
-
