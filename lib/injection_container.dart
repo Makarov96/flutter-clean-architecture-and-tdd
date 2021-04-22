@@ -25,9 +25,13 @@ Future<void> init() async {
   sl.registerLazySingleton(() => GetRandomNumberTrivia(sl()));
 
   //Repository
-  sl.registerLazySingleton<NumberTriviaRepository>(() =>
-      NumberTriviaRepositoryImpl(
-          remoteDataSource: sl(), localDataSource: sl(), networkInfo: sl()));
+  sl.registerLazySingleton<NumberTriviaRepository>(
+    () => NumberTriviaRepositoryImpl(
+      remoteDataSource: sl(),
+      localDataSource: sl(),
+      networkInfo: sl(),
+    ),
+  );
 
   //Data sources
   sl.registerLazySingleton<NumberTriviaRemoteDataSource>(
